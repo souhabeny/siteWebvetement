@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="bib.css" rel="stylesheet">
+    <style>
+
+
+        body {
+            background-color:#e6e6e6;
+            padding:0;
+            margin:0;
+        }
+        h1{
+            font-size:40px;
+            font-family:'Cormorant Garamond', serif;
+            letter-spacing:50px;
+            text-align:center;
+        }
+        #one {  animation: animone 10s infinite;}
+
+        #two {  margin-left:50px; animation: slidein 10s infinite}
+
+        @keyframes animone {
+            0% {opacity:0;}
+            20% {opacity:1;}
+            80% {opacity:1;}
+            100% {opacity:0;}
+        }
+
+        @keyframes slidein {
+            100% { margin-left:0px; opacity:0}
+        }
+
+
+        #sv{}
+        .divnav{
+            padding:10px;
+            background-color:#e6e6e6;
+            padding-top:20px;
+            display: flex;flex-direction: row;
+        }
+        .divnav a{
+
+            display:block;
+            color:#696969;
+            text-align:center;
+            padding:5px;
+            font-size:18px;
+            text-decoration:none;
+            font-family:'Cinzel', serif;
+            width:300px;
+            letter-spacing:10px;
+            transition: color 1s;
+        }
+        .divnav a:hover{
+            background-color:#000000;
+
+            color:white;
+        }
+
+        nav{
+            padding-left:150px
+        }
+
+        .row{
+            width:100%;
+            margin:15px 0 5px 0;
+            display:flex;
+
+
+        }
+
+        .divp{
+            box-shadow: 0 0 25px 6px #00000025;
+            border-radius: 15px;
+            width:250px;
+            height:400px;
+            margin: 0px 8px 0 10px;
+            padding : 10px 0 10px;
+
+
+        }
+
+        .price {
+
+            float: left;
+            margin: 0 10px 10px 0;
+
+            padding: 10px;
+
+        }
+
+        h6 {
+            font-size: 16px;
+            display: block;
+            border-bottom: 1px solid #ccc;
+            margin: 0 0 10px 0;
+            padding: 0 0 5px 0;
+            font-family:'Cormorant Garamond', serif;
+        }
+
+        @keyframes entry {
+            from{transform: translateX(1800px)}
+            to{transform: translateX(0px)}
+        }
+        .enter{
+            animation: entry  ease-in;
+            animation-duration: 1.5s;
+            transform: translateX(0);
+
+        }
+        .social{
+            margin:20px;
+            width: 35px;
+            height: 25px;
+
+            text-align: center;
+            border-radius: 3px;
+
+            color: #000000;
+
+        }
+
+        .social:hover{
+            border-radius: 50% 5px 50% 50%;
+            transition: 0.5s border-radius;
+        }
+
+        .fb:hover{
+            color: #3b5998;
+        }
+        .insta:hover{
+            color: #cd486b;
+        }
+        .twitter:hover{
+            color: #55acee;
+        }
+        .fa {
+            padding: 20px 10px 20px 10px;
+            font-size: 20px;
+
+            text-align: center;
+            text-decoration: none;
+        }
+        footer{margin-top: 20px}
+        .foot{
+            display:flex ;
+            flex-direction: row;
+            justify-content:space-evenly;margin: 0;
+            font-style: italic;
+
+
+        }
+        .foot a::before{content: "|";
+            font-size: 30px;
+            color: black;
+            padding-right:10px;
+        }
+
+
+        .foot a{font-size: 18px;
+            font-weight: bold;
+            color: black;
+            line-height: 1.8;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.5s;
+
+        }
+        .foot a:hover{
+
+            font-size: 20px;
+        }
+        footer p{ font-family:'Cormorant Garamond', serif;text-align: center;}
+    </style>
+
+</head>
+<body>
+<header>
+    <h1 id="one">Chaussures</h1>
+    <h1 id="two">
+        <span>Homme</span>
+    </h1>
+
+</header>
+
+<nav class="nav">
+
+    <div class="divnav">
+        <a href="../home.html">Menu</a>
+        <a href="vetementH.html">Vetement</a>
+        <a href="#">Chaussures</a>
+        <a  href="accessoireH.html">Accessoires</a>
+    </div>
+
+</nav>
+<section>
+    <div class="row ">
+        <div class=" divp enter" onmouseover="slide('f1',true)" onmouseleave="slide('f1',false)">
+
+            <img class="f1" src="../images/ch1.jpg"  width="250" height="250" />
+            <img class="f1" src="../images/ch11.jpg"  width="250" height="250" hidden />
+
+            <div class="price">
+                <h6>Men’s black monochrome trainers</h6>
+                <p>Prix: <em>99Dt</em></p>
+            </div>
+        </div>
+        <div class=" divp enter" onmouseover="slide('f2',true)" onmouseleave="slide('f2',false)">
+            <img class="f2" src="../images/ch22.jpg"  width="250" height="250" />
+            <img class="f2" src="../images/ch2.jpg"  width="250" height="250" hidden />
+            <div class="price">
+                <h6>Men’s beige monochrome trainers
+                </h6>
+                <p>Prix: <em>120Dt</em></p>
+            </div>
+        </div>
+        <div class="divp enter" onmouseover="slide('f3',true)" onmouseleave="slide('f3',false)">
+            <img class="f3" src="../images/ch3.jpg"  width="250px" height="250px"/>
+            <img class="f3"  src="../images/ch33.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>Men’s blue monochrome trainers
+                </h6>
+                <p>Prix: <em>120Dt</em></p>
+            </div>
+        </div>
+
+        <div class="divp enter" onmouseover="slide('f4',true)" onmouseleave="slide('f4',false)">
+            <img class="f4" src="../images/ch4.jpg"  width="250px" height="250px"/>
+            <img class="f4"  src="../images/ch44.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>Men's corduroy trainers
+                </h6>
+                <p>Prix: <em>159Dt</em></p>
+            </div>
+        </div>
+        <div class="divp enter" onmouseover="slide('f5',true)" onmouseleave="slide('f5',false)">
+            <img class="f5" src="../images/ch5.jpg"  width="250px" height="250px"/>
+            <img class="f5"  src="../images/ch55.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>Men's contrast trainers
+                </h6>
+                <p>Prix: <em>99Dt</em></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="row ">
+
+
+        <div class="divp enter" onmouseover="slide('f6',true)" onmouseleave="slide('f6',false)">
+            <img class="f6" src="../images/ch6.jpg"  width="250px" height="250px"/>
+            <img class="f6"  src="../images/ch6.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>Men’s black monochrome trainers</h6>
+                <p>Prix: <em>99Dt</em></p>
+            </div>
+        </div>
+        <div class=" divp enter" onmouseover="slide('f7',true)" onmouseleave="slide('f7',false)">
+            <img class="f7" src="../images/ch7.jpg"  width="250px" height="250px"/>
+            <img class="f7"  src="../images/ch77.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>Red monochrome trainers
+                </h6>
+                <p>Prix: <em>99Dt</em></p>
+            </div>
+        </div>
+        <div class=" divp enter" onmouseover="slide('f8',true)" onmouseleave="slide('f8',false)">
+            <img class="f8" src="../images/ch8.jpg"  width="250px" height="250px"/>
+            <img class="f8"  src="../images/ch88.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>Men's LEATHER monochrome trainers
+                </h6>
+                <p>Prix: <em>99Dt</em></p>
+            </div>
+        </div>
+        <div class=" divp enter" onmouseover="slide('f9',true)" onmouseleave="slide('f9',false)">
+            <img class="f9" src="../images/ch9.jpg"  width="250px" height="250px"/>
+            <img class="f9"  src="../images/ch99.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>Men’s smart shoes
+                </h6>
+                <p>Prix: <em>99Dt</em></p>
+            </div>
+        </div>
+        <div class=" divp enter" onmouseover="slide('f10',true)" onmouseleave="slide('f10',false)">
+            <img class="f10" src="../images/ch10.jpg"  width="250px" height="250px"/>
+            <img class="f10"  src="../images/ch1010.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>Men’s smart shoes with broguing</h6>
+                <p>Prix: <em>99Dt</em></p>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+<script>
+    function slide(classname,b){
+        var images= document.getElementsByClassName(classname);
+        if(b) {
+            images[0].setAttribute('hidden', '');
+            images[1].removeAttribute('hidden');
+        }else{
+            images[1].setAttribute('hidden', '');
+            images[0].removeAttribute('hidden');
+        }
+    }
+
+</script>
+<footer>
+
+    <div class="foot" >
+        <div class="c1"><a href="../home.html" >Menu</a></div>
+        <div class="c1"> <a href="vetementH.html">Precedent</a></div>
+        <div class="c1"><a href="accessoireH.html">Suivant</a></div>
+        <div class="c1"><a href="contact.html">Contact</a></div>
+    </div>
+    <div style="padding: 10px ">
+        <h5 style="text-align: center; color:black;font-family: 'Cormorant Garamond', serif;letter-spacing: 10px">
+            CONTACTEZ NOUS
+        </h5>
+        <div style="border: 2px double rgba(121,121,121,0.49);border-width: 4px 0; margin-left: 20%;margin-right: 20%; margin-bottom: 15px"></div>
+
+    </div>
+
+    <div class="" style="display: flex; justify-content: center;">
+        <div ><a class="fa fa-facebook social fb"></a></div>
+        <div><a class="fa fa-twitter social twitter"></a></div>
+        <div><a class="fa fa-instagram insta social"></a></div>
+    </div>
+    <p> copyright &copy; all right reserved</p>
+</footer>
+
+</body>
+</html>

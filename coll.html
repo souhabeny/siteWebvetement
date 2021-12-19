@@ -1,0 +1,214 @@
+<html>
+<head>
+<meta charset=UTF-8"/>
+  <meta charset=UTF-16"/>
+
+<title> collfemme </title>
+<style>
+body {
+  margin: 0;
+  background: #000;
+  background-size: cover;
+}
+video { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  color: black;
+ background: rgba(255,255,255,0.8);
+}
+
+h1 {
+  font-family: Moderne Sans, sans-serif;
+  text-align: center;
+  
+  width: 100%;
+  letter-spacing: 10px;
+}
+.card{
+    box-shadow: 0 0 25px 4px #00000025;
+    border-radius: 15px;
+
+
+}
+.menu{
+ position: absolute;
+  margin-top: 150px;
+  width:60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: darkgray;
+
+
+}
+
+
+
+
+h1 {
+ /* background-image: url(https://media1.giphy.com/media/R4aBPhPmoLNzW/giphy.gif?cid=3640f6095be844f46f52766b6713195b);*/
+  background-size: cover;
+  color: black;
+  text-transform: uppercase;
+  font-size: 50px;
+
+
+}
+
+
+span{ font-size:25px}
+li{cursor: pointer;}
+
+
+
+#menu {
+  list-style:none;
+  text-align: center;
+  width: 100%;
+  font-weight:bold;
+  padding:0;
+
+}
+#menu ul {
+
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+}
+#menu li {
+  font-size:25px;
+
+  font-family:fantasy;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #808080;
+
+}
+#menu li li {
+  max-height:0;
+  overflow: hidden;
+  transition: all 0.5s;
+  border-radius:0;
+  box-shadow: none;
+  border:none;
+  padding:10px;
+}
+
+#menu ul li a, #menu li:hover li a {
+  font-size:15px;
+  display:block;
+  text-decoration: none;
+  color:white;
+  padding: 8px 0;
+  font-family:monospace;
+
+}
+
+#menu li li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color:black;
+
+}
+
+#menu li:hover li {
+  max-height:50px;
+}
+
+
+
+aside{position:absolute;
+  top:400px;
+  left:300px}
+nav{}
+
+
+
+
+#f{background-color:rgba(0, 0, 0, 0.73)}
+#h{background-color:rgba(0, 0, 0, 0.73)}
+
+</style>
+</head>
+<body>
+<video  playsinline autoplay muted loop>
+
+<source src="videos/video.mp4" type="video/mp4">
+</video>
+<header>
+<h1>New Collection</h1>
+</header>
+
+<div class="card menu">
+  <ul id="menu" class="cont">
+
+    <li onClick="show(1)" ondblclick="masquer2(1)" id="f">Femme
+      <ul id="title1" style="display:none">
+        <li><a href="pages/VetementF.html" >vetement</a></li>
+        <li><a href="pages/chaussure.html" >Chaussures</a></li>
+        <li><a href="pages/accesoire.html" >Accesoires</a></li>
+
+
+      </ul>
+    </li>
+
+    <li onClick="show(2)" ondblclick="masquer2(2)" id="h">Homme
+      <ul id="title2" style="display:none">
+        <li><a href="#">vetement</a></li>
+        <li><a href="#">Chaussures</a></li>
+        <li><a href="#">Accesoires</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
+<script>
+    var b = false;
+    function show(x)
+    {   var t1 = document.getElementById("title1");
+        var t2 = document.getElementById("title2");
+        if (!b) {
+
+        if (x == 1) {
+            t1.style.display = "block";
+        }
+        if (x == 2) {
+            t2.style.display = "block";
+        }
+        b=true;
+    }else{
+        if (x == 1) {
+            t1.style.display = "none";
+        }
+        if (x == 2) {
+            t2.style.display = "none";
+        }
+        b=false;
+
+    }
+    }
+
+    function masquer2(y)
+    {
+        var t1=document.getElementById("title1");
+        var t2=document.getElementById("title2");
+        if(y==1)
+        {t1.style.display="none";}
+        if(y==2)
+        {t2.style.display="none";}
+
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<canvas id="dessin" width="900" height="700" style="background-color:lightgrey;margin-top:80px"></canvas>
+<script>
+    var moncanvas = document.getElementById('dessin');
+    var ctx = moncanvas.getContext('2d');
+    ctx.fillStyle="rgb(236, 208, 120)";
+    ctx.fillRect(50,470,50,30);
+
+    ctx.fillStyle="rgba(217, 91, 67, 0.7)";
+    ctx.fillRect(50,430,100,30);
+
+    ctx.fillStyle="rgba(192, 41, 66, 0.7)";
+    ctx.fillRect(50,390,120,30);
+    ctx.fillStyle="rgba(84, 36, 55, 0.7)";
+    ctx.fillRect(50,350,240,30);
+    ctx.fillStyle="rgba(83, 119, 122, 0.7)";
+    ctx.fillRect(50,310,260,30);
+    ctx.fillStyle="rgba(119, 146, 174, 0.7)";
+    ctx.fillStyle=" #ba749f";
+    ctx.fillRect(50,270,240,30);
+    ctx.fillStyle=" #b89a8d";
+    ctx.fillRect(50,230,300,30);
+    ctx.fillStyle=" #ba8f73";
+    ctx.fillRect(50,190,320,30);
+    ctx.fillStyle="  #c95959";
+    ctx.fillRect(50,150,330,30);
+    ctx.fillStyle=" #8c8c66";
+    ctx.fillRect(50,110,335,30);
+    ctx.fillStyle=" #ba8f73";
+    ctx.fillRect(50,70,340,30);
+    ctx.fillStyle="  #947547";
+    ctx.fillRect(50,30,350,30);
+    ctx.fillStyle="black";
+    ctx.font="12px arial";
+    ctx.fillText("janvier",10,500);
+
+    ctx.fillText("fevrier",10,460);
+    ctx.fillText("mars",10,420);
+    ctx.fillText("avril",10,380);
+    ctx.fillText("mai",10,340);
+    ctx.fillText("juin",10,300);
+    ctx.fillText("juillet",10,260);
+    ctx.fillText("aout",10,220);
+    ctx.fillText("Sept",10,180);
+    ctx.fillText("oct",10,140);
+    ctx.fillText("nov",10,100);
+    ctx.fillText("dec",10,60);
+    ctx.beginPath();
+    ctx.moveTo(10, 530);
+    ctx.lineTo(530, 530);
+    ctx.stroke();
+    ctx.fillText("0",50,550);
+    ctx.fillText("2000",100,550);
+    ctx.fillText("4000",150,550);
+    ctx.fillText("6000",200,550);
+    ctx.fillText("8000",250,550);
+    ctx.fillText("10000",300,550);
+    ctx.fillText("Votre messages durant cette anneé ",500,550);
+</script></body>
+</html>

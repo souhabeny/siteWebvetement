@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Vetement</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="bib.css" rel="stylesheet">
+    <style>
+
+        body {
+            background-color:#e6e6e6;
+            padding:0;
+            margin:0;
+        }
+
+        h1{
+            font-size:40px;
+            font-family:'Cormorant Garamond', serif;
+            letter-spacing:50px;
+            text-align:center;
+        }
+
+        #one {  animation: animone 10s infinite;}
+
+        #two {  margin-left:80px; animation: animtwo 10s infinite}
+
+        @keyframes animone {
+            0% {opacity:0;}
+            20% {opacity:1;}
+            80% {opacity:1;}
+            100% {opacity:0;}
+        }
+
+        @keyframes animtwo {
+            100% { margin-left:0px; opacity:0}
+        }
+
+
+
+        .divnav{
+            padding:10px;
+            background-color:#e6e6e6;
+            padding-top:20px;
+            display: flex;flex-direction: row;
+        }
+        .divnav a{
+
+
+            color:#696969;
+            text-align:center;
+            padding:5px;
+            font-size:18px;
+            text-decoration:none;
+            font-family:'Cinzel', serif;
+            width:300px;
+            letter-spacing:10px;
+            transition: color 1s;
+        }
+        .divnav a:hover{
+            background-color:#000000;
+
+            color:white;
+        }
+
+        nav{
+            padding-left:50px
+        }
+
+
+        .row{
+            width:100%;
+            margin:15px 0 5px 0;
+            display:flex;
+            flex-direction: row;
+
+        }
+
+        .divp{
+            box-shadow: 0 0 25px 6px #00000025;
+            border-radius: 15px;
+            width:250px;
+            height:400px;
+            margin: 0px 8px 0 10px;
+            padding : 10px 0 10px;
+
+
+        }
+
+
+        @keyframes entry {
+            from{transform: translateX(1800px)}
+            to{transform: translateX(0px)}
+        }
+        .enter{
+            animation: entry  ease-in;
+            animation-duration: 1.5s;
+            transform: translateX(0);
+
+        }
+        .price {
+
+            float:left;
+            margin: 0 10px 10px 0;
+
+            padding: 10px;
+
+        }
+
+        h6 {
+            font-size: 16px;
+            display: block;
+            border-bottom: 1px solid #ccc;
+            margin: 0 0 10px 0;
+            padding: 0 0 5px 0;
+            font-family:'Cormorant Garamond', serif;
+        }
+        footer{margin-top: 20px}
+
+        .foot{
+            display:flex ;
+            flex-direction: row;
+            justify-content:space-evenly;margin: 0;
+            font-style: italic;
+
+
+        }
+        .foot a::before{content: "|";
+            font-size: 30px;
+            color: black;
+            padding-right:10px;
+        }
+
+
+        .foot a{font-size: 18px;
+            font-weight: bold;
+            color: black;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.5s;
+
+        }
+        .foot a:hover{
+
+            font-size: 20px;
+        }
+        footer h5{text-align: center; color:black;
+            font-family: 'Cormorant Garamond', serif;
+            letter-spacing: 10px;}
+        .social{
+            margin:20px;
+            width: 35px;
+            height: 15px;
+            text-align: center;
+            border-radius: 3px;
+            color: #000000;
+            padding: 20px 10px 20px 10px;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+
+        .fb:hover{
+            color: #3b5998;
+        }
+        .insta:hover{
+           color: #cd486b;
+        }
+        .twitter:hover{
+           color: #55acee;
+        }
+
+
+
+footer p{ font-family:'Cormorant Garamond', serif;text-align: center}
+
+    </style>
+
+</head>
+<body>
+    <nav class="nav">
+
+        <div class="divnav">
+            <a href="../home.html">Menu</a>
+            <a href="#">Vetement</a>
+            <a href="chaussure.html">Chaussures</a>
+            <a  href="accesoire.html">Accessoires</a>
+        </div>
+    
+    </nav>
+<header>
+    <h1 id="one">Vetement</h1>
+    <h1 id="two">
+        <span>Femme</span>
+    </h1>
+
+</header>
+
+
+<section>
+    <div class="row ">
+        <div class=" divp enter" onmouseover="slide('f1',true)" onmouseleave="slide('f1',false)">
+
+
+                <img class="f1" src="../images/v11.jpg"  width="250" height="250" />
+                <img class="f1" src="../images/v1.jpg"  width="250" height="250" hidden />
+            <div class="price">
+                <h6>TOP</h6>
+                <p>Prix: <em>49Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between">
+                     <div style="width: 20px;height:20px;background-color:rgba(99,9,22,1)"></div>
+                     <div style="width: 20px;height:20px;background-color:rgba(92,99,91,1)"></div>
+                     <div style="width: 20px;height:20px;background-color:rgba(99,92,39,1)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="divp enter" onmouseover="slide('f2',true)" onmouseleave="slide('f2',false)">
+
+                <img class="f2" src="../images/v22.jpg"  width="250" height="250" />
+                <img class="f2" src="../images/v2.jpg"  width="250" height="250" hidden />
+            <div class="price">
+                <h6>PANTALON</h6>
+                <p>Prix: <em>69Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right: 17px">
+                    <div style="width: 20px;height:20px;background-color:rgba(99,9,22,1)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(15,88,99)"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class=" divp enter" onmouseover="slide('f3',true)" onmouseleave="slide('f3',false)">
+                <img class="f3" src="../images/v3.jpg"  width="250px" height="250px"/>
+                <img class="f3"  src="../images/v33.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>COMBINAISON</h6>
+                <p>Prix: <em>70Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right: 45px;">
+                    <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(99,65,17)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(99,92,39)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="divp enter" onmouseover="slide('f4',true)" onmouseleave="slide('f4',false)">
+
+                <img class="f4" src="../images/v4.jpg"  width="250px" height="250px"/>
+                <img class="f4"  src="../images/v44.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>ROBE</h6>
+                <p>Prix: <em>58Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between">
+                    <div style="width: 20px;height:20px;background-color:rgba(99,9,22,1)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(102,102,102)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                </div>
+            </div>
+        </div>
+        <div class=" divp enter" onmouseover="slide('f5',true)" onmouseleave="slide('f5',false)">
+                <img class="f5" src="../images/v5.jpg"  width="250px" height="250px"/>
+                <img class="f5"  src="../images/v55.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>ROBE</h6>
+                <p>  Prix: <em>80Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between">
+                    <div style="width: 20px;height:20px;background-color:rgba(99,9,22,1)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(102,102,102)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(45,77,99)"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row ">
+
+
+        <div class="divp enter" onmouseover="slide('f6',true)" onmouseleave="slide('f6',false)">
+
+                <img class="f6" src="../images/v6.jpg"  width="250px" height="250px"/>
+                <img class="f6"  src="../images/v66.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>JUPE</h6>
+                <p>Prix: <em>30Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between">
+                    <div style="width: 20px;height:20px;background-color:rgba(99,9,22,1)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(99,65,17)"></div>
+                </div>
+            </div>
+        </div>
+        <div class=" divp enter" onmouseover="slide('f7',true)" onmouseleave="slide('f7',false)">
+
+                <img class="f7" src="../images/v7.jpg"  width="250px" height="250px"/>
+                <img class="f7"  src="../images/v77.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>PANTALON</h6>
+                <p>Prix: <em>55Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right: 17px">
+                    <div style="width: 20px;height:20px;background-color:rgb(99,65,17)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(99,92,39)"></div>
+                </div>
+            </div>
+        </div>
+        <div class=" divp enter" onmouseover="slide('f8',true)" onmouseleave="slide('f8',false)">
+
+                <img class="f8" src="../images/v8.jpg"  width="250px" height="250px"/>
+                <img class="f8"  src="../images/v88.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>PULL BLANC</h6>
+                <p>Prix: <em>45Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right: 25px;">
+                    <div style="width: 20px;height:20px;background-color:rgb(201,202,200)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(205,213,209)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(222,224,184)"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" divp enter" onmouseover="slide('f9',true)" onmouseleave="slide('f9',false)">
+
+                <img class="f9" src="../images/v9.jpg"  width="250px" height="250px"/>
+                <img class="f9"  src="../images/v99.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>BLOUSON</h6>
+                <p>Prix: <em>75Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right: 5px">
+                    <div style="width: 20px;height:20px;background-color:rgb(99,65,17)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(99,9,22)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(99,92,39)"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" divp enter" onmouseover="slide('f10',true)" onmouseleave="slide('f10',false)">
+
+
+                <img class="f10" src="../images/v10.jpg"  width="250px" height="250px"/>
+                <img class="f10"  src="../images/v1010.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>JUPE NOIR</h6>
+                <p>Prix: <em>35Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right:10px;">
+                    <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgba(0,0,0,0.81)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgba(0,0,0,0.91)"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row ">
+
+
+        <div class="divp enter" onmouseover="slide('f11',true)" onmouseleave="slide('f11',false)">
+
+            <img class="f11" src="../images/v111.jpg"  width="250px" height="250px"/>
+            <img class="f11"  src="../images/v1111.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>MANTEAU</h6>
+                <p>Prix: <em>15Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right:9px;">
+                    <div style="width: 20px;height:20px;background-color:rgb(201,202,200)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(99,65,17)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(99,92,39)"></div>
+                </div>
+            </div>
+        </div>
+        <div class=" divp enter" onmouseover="slide('f12',true)" onmouseleave="slide('f12',false)">
+
+            <img class="f12" src="../images/v12.jpg"  width="250px" height="250px"/>
+            <img class="f12"  src="../images/v1212.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>MANTEAU</h6>
+                <p>Prix: <em>150Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right:9px;">
+                    <div style="width: 20px;height:20px;background-color:rgb(201,202,200)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(99,65,17)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(99,92,39)"></div>
+                </div>
+            </div>
+        </div>
+        <div class=" divp enter" onmouseover="slide('f13',true)" onmouseleave="slide('f13',false)">
+
+            <img class="f13" src="../images/v13.jpg"  width="250px" height="250px"/>
+            <img class="f13"  src="../images/v1313.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>MANTEAU</h6>
+                <p>Prix: <em>145Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right:9px;">
+                    <div style="width: 20px;height:20px;background-color:rgb(198,155,202)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(99,77,87)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(138,142,150)"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" divp enter" onmouseover="slide('f14',true)" onmouseleave="slide('f14',false)">
+
+            <img class="f14" src="../images/v14.jpg"  width="250px" height="250px"/>
+            <img class="f14"  src="../images/v1414.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>PULL</h6>
+                <p>Prix: <em>25Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between">
+                    <div style="width: 20px;height:20px;background-color:rgba(99,9,22,1)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgba(92,99,91,1)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgba(99,92,39,1)"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" divp enter" onmouseover="slide('f15',true)" onmouseleave="slide('f15',false)">
+
+
+            <img class="f15" src="../images/v15.jpg"  width="250px" height="250px"/>
+            <img class="f15"  src="../images/v1515.jpg" width="250px" height="250px" hidden/>
+            <div class="price">
+                <h6>PULL NOIR</h6>
+                <p>Prix: <em>35Dt</em></p>
+                <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right:10px;">
+                    <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                    <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row ">
+
+
+            <div class="divp enter" onmouseover="slide('f16',true)" onmouseleave="slide('f16',false)">
+
+                <img class="f16" src="../images/v16.jpg"  width="250px" height="250px"/>
+                <img class="f16"  src="../images/v1616.jpg" width="250px" height="250px" hidden/>
+                <div class="price">
+                    <h6>PULL NOIR</h6>
+                    <p>Prix: <em>30Dt</em></p>
+                    <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right:10px;">
+                        <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                        <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                        <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                    </div>
+                </div>
+            </div>
+            <div class=" divp enter" onmouseover="slide('f17',true)" onmouseleave="slide('f17',false)">
+
+                <img class="f17" src="../images/v17.jpg"  width="250px" height="250px"/>
+                <img class="f17"  src="../images/v1717.jpg" width="250px" height="250px" hidden/>
+                <div class="price">
+                    <h6>SWEATSHIRT</h6>
+                    <p>Prix: <em>55Dt</em></p>
+                    <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right: 25px;">
+                        <div style="width: 20px;height:20px;background-color:rgb(99,9,22)"></div>
+                        <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                        <div style="width: 20px;height:20px;background-color:rgb(138,142,150)"></div>
+                    </div>
+                </div>
+            </div>
+            <div class=" divp enter" onmouseover="slide('f18',true)" onmouseleave="slide('f18',false)">
+
+                <img class="f18" src="../images/v18.jpg"  width="250px" height="250px"/>
+                <img class="f18"  src="../images/v1818.jpg" width="250px" height="250px" hidden/>
+                <div class="price">
+                    <h6>Faux suede coat</h6>
+                    <p>Prix: <em>45Dt</em></p>
+                    <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right: 25px;">
+                        <div style="width: 20px;height:20px;background-color:rgb(99,92,39)"></div>
+                        <div style="width: 20px;height:20px;background-color:rgb(99,65,17)"></div>
+                        <div style="width: 20px;height:20px;background-color:rgb(99,92,39)"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" divp enter" onmouseover="slide('f19',true)" onmouseleave="slide('f19',false)">
+
+                <img class="f19" src="../images/v19.jpg"  width="250px" height="250px"/>
+                <img class="f19"  src="../images/v1919.jpg" width="250px" height="250px" hidden/>
+                <div class="price">
+                    <h6>PANTALON</h6>
+                    <p>Prix: <em>75Dt</em></p>
+                    <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right: 17px">
+                        <div style="width: 20px;height:20px;background-color:rgb(41,36,99)"></div>
+                        <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                        <div style="width: 20px;height:20px;background-color:rgb(15,88,99)"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" divp enter" onmouseover="slide('f20',true)" onmouseleave="slide('f20',false)">
+
+
+                <img class="f20" src="../images/v20.jpg"  width="250px" height="250px"/>
+                <img class="f20"  src="../images/v2020.jpg" width="250px" height="250px" hidden/>
+                <div class="price">
+                    <h6>PANTALON</h6>
+                    <p>Prix: <em>65Dt</em></p>
+                    <div style="display: flex;flex-direction: row;justify-content:space-between;margin-right: 17px">
+                        <div style="width: 20px;height:20px;background-color:rgb(88,99,98)"></div>
+                        <div style="width: 20px;height:20px;background-color:rgb(0,0,0)"></div>
+                        <div style="width: 20px;height:20px;background-color:rgb(15,88,99)"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+</section>
+
+
+<script>
+    function slide(classname,b){
+        var images= document.getElementsByClassName(classname);
+        if(b) {
+            images[0].setAttribute('hidden', '');
+            images[1].removeAttribute('hidden');
+        }else{
+            images[1].setAttribute('hidden', '');
+            images[0].removeAttribute('hidden');
+        }
+    }
+
+
+</script>
+<footer>
+
+    <div class="foot" >
+        <div class="c1"><a href="../home.html" >Menu</a></div>
+        <div class="c1"> <a href="../home.html">Precedent</a></div>
+        <div class="c1"><a href="chaussure.html">Suivant</a></div>
+        <div class="c1"><a href="contact.html">Contact</a></div>
+    </div>
+    <div style="padding: 10px ">
+        <h5 style="">
+            CONTACTEZ NOUS
+        </h5>
+        <div style="border: 2px double rgba(121,121,121,0.49);border-width: 4px 0; margin-left: 20%;margin-right: 20%; margin-bottom: 15px"></div>
+
+    </div>
+
+    <div class="" style="display: flex; justify-content: center;">
+        <div ><a class="fa fa-facebook social fb"></a></div>
+        <div><a class="fa fa-twitter social twitter"></a></div>
+        <div><a class="fa fa-instagram insta social"></a></div>
+    </div>
+    <p> copyright &copy; all right reserved</p>
+</footer>
+
+</body>
+</html>

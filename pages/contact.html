@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="bib.css" rel="stylesheet">
+    <style>
+
+
+        body {
+
+            background-image: url("../images/gif2.gif");
+
+        }
+        .divnav{
+            padding:10px;
+            
+            padding-top:20px;
+            display: flex;flex-direction: row;
+        }
+        .divnav a{
+
+
+            color:#696969;
+            text-align:center;
+            padding:5px;
+            font-size:18px;
+            text-decoration:none;
+            font-family:'Cinzel', serif;
+            width:300px;
+            letter-spacing:10px;
+            transition: color 1s;
+        }
+        .divnav a:hover{
+            background-color:#000000;
+
+            color:white;
+        }
+
+        nav{
+            padding-left:50px
+        }
+
+        #container{
+
+            box-shadow: 0 0 25px 6px #00000025;
+            text-align: center;
+            border-radius: 5px;
+            margin: 50px 400px;
+            background: rgba(255, 255, 255, 0.95);
+            height: 500px;
+            width: 480px;
+            padding: 20px;
+
+
+
+        }
+
+        #container h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size:30px;
+          padding-bottom: 30px;
+            letter-spacing: 2px;
+
+
+
+        }
+
+        #container input {
+
+            width: 210px;
+            text-align: center;
+            border-radius: 7px;
+            background: #eee;
+            padding:10px 30px;
+            margin: 10px 0 10px ;
+            border: none;
+            color: #222;
+            transition: all 0.5s ;
+        }
+
+        #container textarea {
+
+            width: 210px;
+            text-align: center;
+            border-radius: 7px;
+            background: #eee;
+            padding:10px 30px;
+            margin: 10px 0 10px ;
+            border: none;
+            color: #222;
+            transition: all 0.3s ;
+        }
+
+        #container input:focus {background: rgba(98, 99, 97, 0.44);}
+        #container textarea:focus {background: rgba(98, 99, 97, 0.44);}
+
+        #container button {
+            background-color: grey;
+            box-shadow: 0 0 25px 6px #00000025;
+            padding:10px 20px;
+            border-radius: 7px;
+            font-size:12px;
+            cursor: pointer;
+            color: #FFFFFF;
+            border: none;
+            width: 400px;
+            transition:all 0.3s ;
+
+        }
+        #container button:hover{transform: translatey(2px);}
+        #container a{text-decoration: none;color: black;font-family: 'Cinzel', serif;font-size:15px}
+
+    </style>
+
+</head>
+<body>
+    <nav class="nav">
+
+        <div class="divnav">
+            <a href="../home.html">Menu</a>
+            <a href="#">Vetement</a>
+            <a href="chaussure.html">Chaussures</a>
+            <a  href="accesoire.html">Accessoires</a>
+        </div>
+    
+    </nav>
+<div id="container">
+    <h2>Contact us</h2>
+    <form>
+        <input type="text" name="name" placeholder="NOM"   /><br/>
+        <input   type="text" name="pr" placeholder="PRENOM"  /><br/>
+        <input type="email" name="email" placeholder="EMAIL"  /><br/>
+        <textarea cols="46" rows="3" name="comment"  placeholder="COMMENTAIRES" ></textarea><br/>
+        <br>
+        <button><a href="diag.html">Envoyer</a></button>
+    </form>
+</div>
+
+
+
+</body>
+</html>

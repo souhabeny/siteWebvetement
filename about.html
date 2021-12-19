@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Vetement</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="pages/bib.css" rel="stylesheet">
+    <style>
+
+        body {
+            background-color:#e6e6e6;
+            padding:0;
+            margin:0;
+        }
+
+        h1{
+            font-size:40px;
+            font-family:'Cormorant Garamond', serif;
+            letter-spacing:48px;
+            text-align:center;
+        }
+
+        #one {  animation: animone 10s infinite;}
+
+        #two {  margin-left:70px; animation: animtwo 10s infinite}
+
+        @keyframes animone {
+            0% {opacity:0;}
+            20% {opacity:1;}
+            80% {opacity:1;}
+            100% {opacity:0;}
+        }
+
+        @keyframes animtwo {
+            100% { margin-left:0px; opacity:0}
+        }
+
+
+
+        .divnav{
+            padding:10px;
+            background-color:#e6e6e6;
+            padding-top:20px;
+            display: flex;flex-direction: row;
+        }
+        .divnav a{
+
+            display:block;
+            color:#696969;
+            text-align:center;
+            padding:5px;
+            font-size:18px;
+            text-decoration:none;
+            font-family:'Cinzel', serif;
+            width:300px;
+            letter-spacing:10px;
+            transition: color 1s;
+        }
+        .divnav a:hover{
+            background-color:#000000;
+
+            color:white;
+        }
+
+        nav{
+            padding-left:130px
+        }
+
+
+
+        p{text-align:center}
+
+
+
+        h6 {
+            font-size: 16px;
+            display: block;
+            border-bottom: 1px solid #ccc;
+            margin: 0 0 10px 0;
+            padding: 0 0 5px 0;
+            font-family:'Cormorant Garamond', serif;
+        }
+        .social{
+            margin:20px;
+            width: 35px;
+            height: 25px;
+
+            text-align: center;
+            border-radius: 3px;
+
+            color: #000000;
+
+        }
+
+        .social:hover{
+            border-radius: 50% 5px 50% 50%;
+            transition: 0.5s border-radius;
+        }
+
+        .fb:hover{
+            color: #3b5998;
+        }
+        .insta:hover{
+            color: #cd486b;
+        }
+        .twitter:hover{
+            color: #55acee;
+        }
+        .fa {
+            padding: 20px 10px 20px 10px;
+            font-size: 20px;
+
+            text-align: center;
+            text-decoration: none;
+        }
+        footer{margin-top: 20px}
+        .foot{
+            display:flex ;
+            flex-direction: row;
+            justify-content:space-evenly;margin: 0;
+            font-style: italic;
+
+
+        }
+        .foot a::before{content: "|";
+            font-size: 30px;
+            color: black;
+            padding-right:10px;
+        }
+
+
+        .foot a{font-size: 18px;
+            font-weight: bold;
+            color: black;
+            line-height: 1.8;
+            font-size: 15px;
+            text-decoration: none;
+            transition: all 0.5s;
+
+        }
+        .foot a:hover{
+
+            font-size: 20px;
+        }
+        footer p{ font-family:'Cormorant Garamond', serif}
+
+
+
+        .container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .titre {
+            position: absolute;
+            bottom: 0;
+            color: black;
+            width:66%;
+            height: 92%;
+            padding: 20px;
+            margin-left: 190px;
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            font-size: 90px;
+            letter-spacing: normal;
+
+        }
+
+     .content {
+            position: absolute;
+            bottom: 0;
+            top:80px;
+
+            color: transparent;
+            width:66%;
+
+            padding: 20px;
+            margin-left: 200px;
+            text-align: center;
+            font-family: 'Cinzel', serif;
+
+            transition: all 0.5s;
+         font-size: 40px;
+        }
+
+
+   .content  #imgh:hover {
+
+            background: rgba(0, 0, 0, 0.5);
+            color:white;
+
+        }
+
+
+        img{
+            margin-left: 200px;
+        }
+        footer p{font-size: 15px}
+
+    </style>
+
+</head>
+<body>
+<header>
+    <h1 id="one">ABOUT</h1>
+    <h1 id="two">
+        <span>US</span>
+    </h1>
+
+</header>
+
+<nav class="nav">
+
+    <div class="divnav">
+        <a href="home.html">Menu</a>
+        <a href="pages/vetementFFF.html">Vetement</a>
+        <a href="pages/chaussure.html">Chaussures</a>
+        <a  href="pages/accesoire.html">Accessoires</a>
+    </div>
+
+</nav>
+<section>
+
+
+
+
+    <div class="container">
+        <img id="imgh" src="images/ab3.jpg" alt="Notebook" style="width:70%;">
+        <div class="titre"><h1 style="color: #FFFFFF">LE CONCEPT</h1></div>
+        <div class="content">
+            <p>Musique, écrans, projections, graphismes modernes, à la mode, couleurs ...</p>
+        </div>
+
+    </div>
+    <div class="container">
+        <img src="images/ab2.jpg" alt="Notebook" style="width:70%;">
+        <div class="titre"><h1>La marque</h1></div>
+        <div class="content">
+            <p>Elegance a été créée en 1998 en tant que nouvelle marque du groupe tunisienne</p>
+        </div>
+
+    </div>
+    <div class="container">
+        <img src="images/ab.jpeg" alt="Notebook" style="width:70%;">
+        <div class="titre"><h1 style="color: #FFFFFF">PRODUCTION</h1></div>
+        <div class="content">
+            <p>Elegance est la marque destinée aux jeunes et répond toujours aux intérêts et aux besoins de ce public..</p>
+        </div>
+
+    </div>
+</section>
+
+
+<script>
+
+
+</script>
+<footer>
+
+    <div class="foot" >
+        <div class="c1"><a href="home.html" >Menu</a></div>
+        <div class="c1"> <a href="home.html">Precedent</a></div>
+        <div class="c1"><a href="pages/vetementFFF.html">Suivant</a></div>
+        <div class="c1"><a href="pages/contact.html">Contact</a></div>
+    </div>
+    <div style="padding: 10px ">
+        <h5 style="text-align: center; color:black;font-family: 'Cormorant Garamond', serif;letter-spacing: 10px">
+            CONTACTEZ NOUS
+        </h5>
+        <div style="border: 2px double rgba(121,121,121,0.49);border-width: 4px 0; margin-left: 20%;margin-right: 20%; margin-bottom: 15px"></div>
+
+    </div>
+
+    <div class="" style="display: flex; justify-content: center;">
+        <div ><a class="fa fa-facebook social fb"></a></div>
+        <div><a class="fa fa-twitter social twitter"></a></div>
+        <div><a class="fa fa-instagram insta social"></a></div>
+    </div>
+    <p> copyright &copy; all right reserved</p>
+</footer>
+
+</body>
+</html>
